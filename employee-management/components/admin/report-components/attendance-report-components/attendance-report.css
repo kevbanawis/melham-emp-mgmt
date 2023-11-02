@@ -1,0 +1,77 @@
+@import url(../../shared/css/manage-profile.css);
+
+.container-fluid {
+  display: grid;
+  height: 100vh;
+  width: 100vh;
+  grid-template-columns: 4fr;
+  grid-template-rows: 0.1fr 0.1fr 1.5fr 0.1fr;
+  grid-template-areas:
+    "header"
+    "search"
+    "employees"
+    "footer";
+  grid-gap: 0.5rem;
+}
+
+header {
+  grid-area: header;
+}
+
+#search {
+  grid-area: search;
+}
+
+.inner-search {
+  padding: 20px;
+}
+
+#table-employees {
+  grid-area: employees;
+  text-align: center;
+}
+
+.table-inner {
+  background: teal;
+  border-radius: 5px;
+  padding: 10px;
+  max-width: 1900px;
+  overflow-x: scroll;
+}
+
+.attendance-body td {
+  min-width: 200px;
+}
+
+#col-eid {
+  width: 200px;
+  color: teal;
+}
+
+#col-ename {
+  width: 500px;
+}
+
+#col-created {
+  width: 300px;
+}
+
+#col-task {
+  width: 1000px;
+}
+
+#icon {
+  font-size: 20px;
+}
+
+footer {
+  background: rgb(56, 56, 61);
+  grid-area: footer;
+  text-align: center;
+}
+
+span {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-weight: 500;
+}

@@ -1,0 +1,66 @@
+@import "../../shared/css/manage-profile.css";
+
+:root {
+  --main-radius: 5px;
+  --main-padding: 5px;
+}
+
+.container-fluid {
+  display: grid;
+  height: 100vh;
+  width: 100vh;
+  grid-template-columns: 4fr;
+  grid-template-rows: 0.1fr 0.1fr 1.3fr 0.1fr;
+  grid-template-areas:
+    "header"
+    "search"
+    "employees"
+    "footer";
+  grid-gap: 0.5rem;
+}
+
+header {
+  grid-area: header;
+}
+
+#search {
+  grid-area: search;
+}
+
+.inner-search {
+  padding: 10px;
+}
+
+#table-employees {
+  grid-area: employees;
+  text-align: center;
+}
+
+#col-eid {
+  width: 170px;
+  color: teal;
+}
+
+#col-ename {
+  min-width: 300px;
+}
+
+#col-res {
+  width: 5px;
+}
+
+#col-log {
+  width: 5px;
+}
+
+footer {
+  background: rgb(56, 56, 61);
+  grid-area: footer;
+  text-align: center;
+}
+
+span {
+  text-transform: uppercase;
+  color: aliceblue;
+  font-weight: 500;
+}
